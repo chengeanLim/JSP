@@ -1,0 +1,40 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.sql.*" %>
+<% request.setCharacterEncoding("UTF-8"); %> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="" />
+    <title>ID Check</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ID_check_Form_card">
+        <main>
+            <div class="ID_check_card_header_name">아이디 중복 확인</div>
+
+            <div class="ID_check_body">
+                <form method="post" action="IDCheckProc.jsp">
+                    <div class="md_3">
+                        <label class="small_mb" for="inputId">ID</label>
+                        <input class="ID_check_input" placeholder="아이디를 입력하세요." type="text" id="inputId" name="id" maxlength="10" autofocus />
+                    </div>
+
+                    <div class="md_0">
+                        <input class="btn_id_check" style="float: right;" type="submit" value="확인" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="ID_check_card_close">
+                <div class="small"><a href="javascript:window.close()">창닫기</a></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
